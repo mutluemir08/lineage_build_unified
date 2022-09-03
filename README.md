@@ -5,20 +5,20 @@ To get started with building LineageOS GSI, you'll need to get familiar with [Gi
 
 First, open a new Terminal window, which defaults to your home directory. Create a new working directory for your LineageOS build and navigate to it:
 
-    mkdir lineage-19.x-build-gsi; cd lineage-19.x-build-gsi
+    mkdir forklineage-19.x-build-gsi; cd forklineage-19.x-build-gsi
 
 Initialize your LineageOS workspace:
 
-    repo init -u https://github.com/LineageOS/android.git -b lineage-19.1
+    repo init -u https://github.com/ForkLineageOS/android.git -b lineage-19.1
 
 Clone both this and the patches repos:
 
-    git clone https://github.com/AndyCGYan/lineage_build_unified lineage_build_unified -b lineage-19.1
-    git clone https://github.com/AndyCGYan/lineage_patches_unified lineage_patches_unified -b lineage-19.1
+    git clone https://github.com/mutluemir08/lineage_build_unified lineage_build_unified -b lineage-19.1
+    git clone https://github.com/mutluemir08/lineage_patches_unified lineage_patches_unified -b lineage-19.1
 
 Finally, start the build script - for example, to build for all supported archs:
 
-    bash lineage_build_unified/buildbot_unified.sh treble A64B A64BG 64B 64BG
+    bash lineage_build_unified/buildbot_unified.sh treble 64B
 
 Be sure to update the cloned repos from time to time!
 
