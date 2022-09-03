@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-echo "LineageOS 19.x Unified Buildbot"
+echo "ForkLineageOS 19.1 Unified Buildbot"
 echo "Executing in 5 seconds - CTRL-C to exit"
 echo ""
 sleep 5
@@ -113,10 +113,7 @@ build_device() {
 
 build_treble() {
     case "${1}" in
-        ("A64B") TARGET=a64_bvS;;
-        ("A64BG") TARGET=a64_bgS;;
         ("64B") TARGET=arm64_bvS;;
-        ("64BG") TARGET=arm64_bgS;;
         (*) echo "Invalid target - exiting"; exit 1;;
     esac
     lunch lineage_${TARGET}-userdebug
